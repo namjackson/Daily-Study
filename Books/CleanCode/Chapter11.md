@@ -37,12 +37,12 @@
 - 시스템 생성과 시스템 사용을 분리하는 방법중 하나
 - 생성과 관련된 코드는 모두 main이나, main에서 호출하는 모듈로 이동 후, 나머지 시스템/애플리케이션은 모든 객체가 생성되었고, 의존성이 연결되었다고 가정한다.
 
-![](CleanCodeChapter11/361F5998-D833-4FC8-A888-0B6FB37061B9.png)
+![](chapter11/361F5998-D833-4FC8-A888-0B6FB37061B9.png)
 Application은 Main이나, 객체 생성되는 과정은 전혀 모른다. 단지 적절한 객체가 생성 되었다고만 알고있다.
 
 ### 팩토리
 - 객체의 생성 시점을 애플리케이션에서 결정해야할때는,  Abstract Factory 패턴을 사용한다.
-![](CleanCodeChapter11/CFB08C80-DE0C-4704-BE8B-C1C75A608354.png)
+![](chapter11/CFB08C80-DE0C-4704-BE8B-C1C75A608354.png)
 - 마찬가지로 애플리케이션은 LineItem이 어떻게 생성되었는지에 대해서는 구체적으로 알지 못한다.  
 
 ### 의존성 주입
@@ -146,7 +146,7 @@ public abstract class Bank implements javax.ejb.EntityBean {
 
 -> 횡단 관심사  - 횡단 관심사항의 기능들을 모듈화하고, 중요한 관심사에 대해서 집중적으로 관리할 수 있도록 한다.
 
-![](CleanCodeChapter11/C01DA825-652A-4F4E-A740-8FB179E62211.png)
+![](chapter11/C01DA825-652A-4F4E-A740-8FB179E62211.png)
 
 모듈 구성 개념인 관점은
 특정 관심사를 지원하기 위해 시스템에서 특정 지점들이 동작하는 방식을 일관성 있게 해야한다.
